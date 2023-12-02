@@ -1,4 +1,4 @@
--- ФИО, тел, почта, отдел, должность
+
 
 CREATE TABLE IF NOT EXISTS  users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

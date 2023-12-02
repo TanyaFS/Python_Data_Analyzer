@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %} {% endblock %} - Corp Info Chart</title>
+    <title>{% block title %} {% endblock %} Fech Inc</title>
     <style>
-        .post {
+        .employee {
+            width: 285px;
+            height: 300px;
+            float: left;
             padding: 10px;
             margin: 5px;
             background-color: #f3f3f3
@@ -34,7 +37,7 @@
     <hr>
     <div class="content">
         <div>
-            <form method="post" action="/v1/search">
+            <form method="POST" action="/search">
 <!--            <label for="search_by_surname">Search employee by surname</label>-->
                 <input type="text" name="filter"
                     placeholder="Search employee name"

@@ -18,9 +18,9 @@ def init_db():
         with open('migrations/001.sql') as file:
             connection.executescript(file.read())
         connection.commit()
-
+        # Внесли в базу информацию о том, что миграция 001 была исполнена,
+        # чтобы информация в базе данных не дублировалась при старте
         connection.execute('INSERT INTO migrations (seq) VALUES (?)',
                            ('001',))
-
-    connection.commit()
+        connection.commit()
     connection.close()
