@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block user %} Edit: "{{ user['surname'] }}" {% endblock %}</h1>
+    <form method="post">
+        <label for="employee">Edit employee info</label>
+        <br>
+        <input type="text" name="surname"
+               placeholder="New surname"
+               value="{{ request.form['surname'] or user['surname'] }}"></input>
+        <br>
+        <input type="text" name="firstname"
+               placeholder="New firstname"
+               value="{{ request.form['name'] or user['name'] }}"></input>
+        <br>
+        <input type="text" name="middle_name"
+               placeholder="New middle name"
+               value="{{ request.form['middle_name'] or user['middle_name'] }}"></input>
+        <br>
+        <input type="text" name="phone"
+               placeholder="New phone"
+               value="{{ request.form['phone'] or user['phone'] }}"></input>
+        <br>
+        <input type="text" name="email"
+               placeholder="New surname"
+               value="{{ request.form['email'] or user['email'] }}"></input>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <form action="{{ url_for('delete', id=user['id']) }}" method="POST">
+        <input type="submit" value="Delete Employee"
+                onclick="return confirm('Are you sure you want to delete this post?')">
+
+    </form>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Employees {% endblock %}</h1>
+    {% for user in users %}
+        <div class='post'>
+            <h3>Surname: {{ user['surname'] }}</h3>
+            <h3>Name: {{ user['name'] }}</h3>
+            <h3>Middle name: {{ user['middle_name'] }}</h3>
+            <h3>Phone: {{ user['phone'] }}</h3>
+            <h3>E-mail: {{ user['email'] }}</h3>
+            <h3>Last Update: {{ user['updated_at'] }}</h3>
+            <a href="{{ url_for('edit', id=user['id']) }}">Edit</a>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+<script>
+   function editMe(){
+        console.log("PUPU")
+    }
+</script>
