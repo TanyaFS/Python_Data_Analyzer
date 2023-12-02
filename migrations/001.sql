@@ -1,0 +1,22 @@
+INSERT INTO `users` (`surname`,`name`,`middle_name`,`phone`,`email`)
+VALUES
+  ("Wood","Ivan","Isaac","46277402876","nam.tempor.diam@outlook.org"),
+  ("Atkins","Plato","Jaquelyn","79162321382","gravida.mauris.ut@protonmail.ca"),
+  ("Medina","Lillith","Meghan","83781255091","nunc.ac@hotmail.net"),
+  ("Hood","Farrah","Bevis","44181534214","massa.vestibulum@protonmail.edu"),
+  ("Howard","TaShya","Hilda","98482621411","proin.mi@protonmail.couk"),
+  ("Marshall","Sean","Yoshio","89327935282","mi.aliquam.gravida@aol.com"),
+  ("Goodwin","Chanda","Samantha","03334851616","mi@hotmail.couk"),
+  ("Downs","Rylee","Dominique","14653748626","accumsan.interdum@protonmail.net"),
+  ("Jensen","Fleur","Jana","06234978711","non.magna@google.com"),
+  ("Vang","Clark","Alfonso","79582069803","integer.id@hotmail.couk"),
+  ("Sharpe","Dante","Audrey","36587564213","amet.ultricies.sem@yahoo.ca"),
+  ("Conner","Keegan","Rana","88343711636","eget.magna@google.ca"),
+  ("Ingram","Mohammad","Maya","49333882719","lorem@google.couk"),
+  ("Pearson","Craig","Leslie","30626842504","in.dolor@aol.couk"),
+  ("Shannon","Wallace","Lionel","21765959454","neque.venenatis@hotmail.com"),
+  ("Reid","Zenia","Marsden","45534537252","arcu@outlook.ca"),
+  ("Powell","Ulysses","Mechelle","76088251367","purus@yahoo.com"),
+  ("Holcomb","Malcolm","Keely","28318841147","volutpat.ornare@aol.ca"),
+  ("Frank","Hector","Margaret","68089177296","augue.sed.molestie@google.edu"),
+  ("Avila","Owen","Cedric","56210135616","nunc.sit@yahoo.edu");
